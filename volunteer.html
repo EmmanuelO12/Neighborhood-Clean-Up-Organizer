@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Neighborhood Clean-Up Organizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Become a Volunteer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="volunteer-info">
+            <div class="volunteer-container">
+                <h2>Join Our Team</h2>
+                <img src="images/volunteer.jpg" alt="Man wearing a volunteer T-shirt">
+                <p>Be part of something bigger! Join our clean-up efforts to make a difference in the community.</p>
+            </div>
+        </section>
+        <section id="volunteer-faq">
+            <h2>FAQs</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button class="accordion-header">What should I bring?</button>
+                <div class="accordion-body">Gloves, reusable water bottle, and a good attitude!</div>
+              </div>
+              <div class="accordion-item">
+                <button class="accordion-header">How long are events?</button>
+                <div class="accordion-body">Most events last 2-3 hours.</div>
+              </div>
+            </div>
+          </section>
+          
+        
+        <section id="volunteer-form">
+            <div class="form-container">
+                <h2>Sign Up to Volunteer</h2>
+                <p>Fill out the form below to join our clean-up efforts.</p>
+                <form action="#" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="event">Select Event:</label>
+                    <select id="event" name="event">
+                        <option value="community-cleanup">Community Park Clean-Up</option>
+                        <option value="beach-drive">Beach Cleanup Drive</option>
+                        <option value="neighborhood-pickup">Neighborhood Trash Pickup</option>
+                        <option value="river-restoration">River Restoration Day</option>
+                        <option value="school-cleanup">School Campus Clean-Up</option>
+                        <option value="forest-preservation">Forest Conservation Project</option>
+                        <option value="city-garden">City Garden Beautification</option>
+                        <option value="lake-shore">Lake Shore Cleanup</option>
+                    </select>
+                    
+                    
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Neighborhood Clean-Up Organizer. All rights reserved.</p>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+</html>

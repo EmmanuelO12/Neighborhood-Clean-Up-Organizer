@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Neighborhood Clean-Up Organizer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Neighborhood Clean-Up Events</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+                <li><a href="donate.html">Donate</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+ 
+        <!-- New Image Section -->
+        <section id="event-images">
+            <div class="image-container">
+                <h2>Our Volunteers in Action</h2>
+                <img src="images/sweeping.jpg" alt="Volunteers sweeping the streets" width="900" height="700">
+            </div>
+        
+            <div class="image-container">
+                <h2>Group Selfie</h2>
+                <img src="images/selfie.jpg" alt="Group of volunteers taking a selfie" width="500" height="700">
+            </div>
+        </section>
+        
+
+        <section id="events-tabs">
+            <div class="tab-buttons">
+              <button class="tab active" data-target="upcoming">Upcoming Events</button>
+              <button class="tab" data-target="past">Past Events</button>
+            </div>
+            <div id="upcoming" class="tab-content active">
+        <section id="event-list">
+            <h2>Upcoming Events</h2>
+            <p>Find and join a clean-up event near you!</p>
+            <!-- Event details will be dynamically added later -->
+            
+                <ul>
+                    <li><strong>Community Park Clean-Up</strong><br>
+                        📅 March 10, 2025 | 📍 Greenfield Community Park | 🕘 9:00 AM - 12:00 PM <br>
+                        📝 Help us clear litter and plant new flowers to beautify the park!
+                    </li>
+                    <li><strong>Beach Cleanup Drive</strong><br>
+                        📅 March 17, 2025 | 📍 Sunset Beach | 🕘 8:00 AM - 11:30 AM <br>
+                        📝 Join us in keeping our beach clean and safe for marine life.
+                    </li>
+                    <li><strong>Neighborhood Trash Pickup</strong><br>
+                        📅 March 23, 2025 | 📍 Downtown Streets | 🕘 10:00 AM - 2:00 PM <br>
+                        📝 Walk through the neighborhood and help collect litter.
+                    </li>
+                    <li><strong>School Playground Cleanup</strong><br>
+                        📅 March 30, 2025 | 📍 Maple Elementary School | 🕘 11:00 AM - 1:00 PM <br>
+                        📝 Sweep, rake, and refresh a playground for local kids.
+                    </li>
+                    <li><strong>Riverbank Restoration Project</strong><br>
+                        📅 April 6, 2025 | 📍 Oak River Park | 🕘 9:30 AM - 12:30 PM <br>
+                        📝 Remove trash and help restore natural vegetation along the river.
+                    </li>
+                    <li><strong>Spring Garden Planting & Cleanup</strong><br>
+                        📅 April 13, 2025 | 📍 Community Garden Center | 🕘 8:30 AM - 12:00 PM <br>
+                        📝 Plant new flowers and clean up garden beds for the season.
+                    </li>
+                    <li><strong>Highway Trash Removal Initiative</strong><br>
+                        📅 April 20, 2025 | 📍 Route 17 Rest Stop | 🕘 10:00 AM - 1:00 PM <br>
+                        📝 Join a team in collecting roadside litter for a cleaner highway.
+                    </li>
+                    <li><strong>Recycling Awareness & Waste Sorting Event</strong><br>
+                        📅 April 27, 2025 | 📍 City Hall Plaza | 🕘 11:00 AM - 3:00 PM <br>
+                        📝 Learn about proper recycling and help sort waste at a community event.
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div id="past" class="tab-content">
+          <ul>
+            <li><strong>Park Clean-Up</strong> - February 12, 2025</li>
+            <li><strong>School Mural Painting</strong> - January 28, 2025</li>
+          </ul>
+        </div>
+      </section>
+
+     
+<section id="weather-info">
+    <h2>Event Weather Forecast</h2>
+    <div class="weather-container">
+        <div class="weather-controls">
+            <label for="event-select">Select Event:</label>
+            <select id="event-select">
+                <option value="">-- Select an Event --</option>
+                <option value="community-cleanup">Community Park Clean-Up</option>
+                <option value="beach-drive">Beach Cleanup Drive</option>
+                <option value="neighborhood-pickup">Neighborhood Trash Pickup</option>
+                <option value="river-restoration">Riverbank Restoration Project</option>
+                <option value="school-playground">School Playground Cleanup</option>
+                <option value="spring-garden">Spring Garden Planting & Cleanup</option>
+                <option value="highway-trash">Highway Trash Removal Initiative</option>
+                <option value="recycling-awareness">Recycling Awareness & Waste Sorting Event</option>
+            </select>
+            <button id="check-weather">Check Weather</button>
+        </div>
+        <div id="weather-display" class="weather-display">
+            <p>Select an event to see the weather forecast</p>
+        </div>
+    </div>
+</section>       
+
+
+
+        
+
+     
+
+
+
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Neighborhood Clean-Up Organizer. All rights reserved.</p>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+</html>
